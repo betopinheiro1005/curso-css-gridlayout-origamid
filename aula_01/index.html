@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>CSS Grid Layout</title>
+</head>
+<body>
+
+  <h2>Grid Container</h2>
+  <h3>O Grid Container é a tag que envolve os itens do grid, ao indicar display: grid, essa tag passa a ser um Grid Container.</h3>
+  <h2>grid-template-columns</h2>
+  <h3>Define o número total de colunas que serão criadas no grid.</h3>
+
+  <hr>
+
+  <div>
+    <h1>
+      <pre>
+        display: block;
+      </pre>
+    </h1>
+    <div class="info">
+      'display: block' é o padrão.
+    </div>
+    <section class="grid">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+      <div class="item">4</div>
+    </section>
+  </div>
+
+  <div>
+    <h1>
+      <pre>
+        ----------------------------------------------
+
+        display: grid;
+      </pre>
+    </h1>
+    <div class="info">
+      Apenas com 'display: grid', nada acontece.
+    </div>
+    <section class="grid">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+      <div class="item">4</div>
+    </section>
+  </div>
+
+  <div>
+    <h1>
+      <pre>
+        ----------------------------------------------
+
+        grid-template-columns: 200px 200px;
+      </pre>
+    </h1>
+    <div class="info">
+      São criadas duas colunas de 200px.
+    </div>
+    <section class="container grid grid-template-columns">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+      <div class="item">4</div>
+    </section>
+  </div>
+
+  <div>
+    <h1>
+      <pre>
+        ----------------------------------------------
+
+        grid-template-columns: 1fr 2fr 1fr;
+      </pre>
+    </h1>
+    <div class="info">
+      São criadas três colunas, sendo que a segunda coluna tem o dobro das duas outras.
+    </div>
+    <section class="container grid grid-template-columns-3">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+      <div class="item">4</div>
+      <div class="item">5</div>
+      <div class="item">6</div>
+    </section>
+  </div>
+
+  <div>
+    <h1>
+      <pre>
+        ----------------------------------------------
+
+        subgrid
+      </pre>
+    </h1>
+    <div class="info">
+      Sub grid dentro da quinta div.
+    </div>
+    <section class="container grid grid-template-columns-3">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+      <div class="item">4</div>
+      <div class="item subgrid">
+        <div>5.1</div>
+        <div>5.2</div>
+        <div>5.3</div>
+      </div>
+      <div class="item">6</div>
+    </section>
+  </div>
+
+</body>
+</html>

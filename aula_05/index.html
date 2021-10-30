@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>CSS - Grid Layout</title>
+</head>
+<body>
+
+  <h2>Grid Container</h2>
+  <h2>grid-template</h2>
+  <h3>Atalho para definir o grid-template-columns, grid-template-rows e grid-template-areas.</h3>
+
+  <hr>
+
+  <div>
+    <h1>
+      <pre>
+        grid-template: 50px 1fr / 100px 1fr 100px
+      </pre>
+    </h1>
+    <div class="info">
+      - Primeira linha com 50px, segunda linha com 1fr.<br>
+      - Primeira coluna com 100px, segunda coluna com 1fr e terceira coluna com 100px.
+    </div>
+    <section class="grid grid-template-1">
+      <div class="item">logo</div>
+      <div class="item">nav</div>
+      <div class="item">content</div>
+      <div class="item">sidenav</div>
+      <div class="item">advert</div>
+      <div class="item">footer</div>
+    </section>
+  </div>
+
+  <div>
+    <h1>
+      <pre>
+        ----------------------------------------------
+
+        grid-template:
+          "logo     nav     nav"    50px
+          "sidenav  content advert" 150px
+          "sidenav  footer  footer" 100px
+          / 100px 1fr 50px;
+      </pre>
+    </h1>
+    <div class="info">
+      - Primeira linha com 50px, segunda linha com 150px e terceira linha com 100px.<br>
+      - Primeira coluna com 100px, segunda coluna com 1fr e terceira coluna com 50px.
+    </div>
+    <section class="grid grid-template-2">
+      <div class="item logo">logo</div>
+      <div class="item nav">nav</div>
+      <div class="item content">content</div>
+      <div class="item sidenav">sidenav</div>
+      <div class="item advert">advert</div>
+      <div class="item footer">footer</div>
+    </section>
+  </div>
+
+</body>
+</html>

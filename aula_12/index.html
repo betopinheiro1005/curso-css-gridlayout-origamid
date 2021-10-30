@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>CSS - Grid Layout</title>
+</head>
+<body>
+
+  <h2>Grid Container</h2>
+  <h2>align-content</h2>
+  <h3>Alinha os itens do grid em relação ao eixo y (vertical).</h3>
+
+  <hr>
+
+  <div>
+    <h1>
+      <pre>
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 50px);
+        height: 300px;
+
+        ----------------------------------------------
+
+        align-content: start;
+      </pre>
+    </h1>
+    <div class="info">
+      Alinha os itens ao início.
+    </div>
+    <section class="grid start">
+      <div class="item">1</div>
+      <div class="item item-2">2</div>
+      <div class="item item-3">3</div>
+      <div class="item">4</div>
+      <div class="item item-5">5</div>
+      <div class="item">6</div>
+    </section>
+  </div>
+
+  <div>
+    <h1>
+      <pre>
+        ----------------------------------------------
+
+        align-content: end;
+      </pre>
+    </h1>
+    <div class="info">
+      Alinha os itens ao final.
+    </div>
+    <section class="grid end">
+      <div class="item">1</div>
+      <div class="item item-2">2</div>
+      <div class="item item-3">3</div>
+      <div class="item">4</div>
+      <div class="item item-5">5</div>
+      <div class="item">6</div>
+    </section>
+  </div>
+
+  <div>
+    <h1>
+      <pre>
+        ----------------------------------------------
+
+        align-content: center;
+      </pre>
+    </h1>
+    <div class="info">
+      Centraliza o conteúdo.
+    </div>
+    <section class="grid center">
+      <div class="item">1</div>
+      <div class="item item-2">2</div>
+      <div class="item item-3">3</div>
+      <div class="item">4</div>
+      <div class="item item-5">5</div>
+      <div class="item">6</div>
+    </section>
+  </div>
+
+  <div>
+    <h1>
+      <pre>
+        ----------------------------------------------
+
+        align-content: stretch;
+      </pre>
+    </h1>
+    <div class="info">
+      Estica os itens.
+    </div>
+    <section class="grid stretch">
+      <div class="item">1</div>
+      <div class="item item-2">2</div>
+      <div class="item item-3">3</div>
+      <div class="item">4</div>
+      <div class="item item-5">5</div>
+      <div class="item">6</div>
+    </section>
+  </div>
+
+  <div>
+    <h1>
+      <pre>
+        ----------------------------------------------
+
+        align-content: space-around;
+      </pre>
+    </h1>
+    <div class="info">
+      Distribui espaço entre os elementos. (O início e final são menores que os espaços internos).
+    </div>
+    <section class="grid space-around">
+      <div class="item">1</div>
+      <div class="item item-2">2</div>
+      <div class="item item-3">3</div>
+      <div class="item">4</div>
+      <div class="item item-5">5</div>
+      <div class="item">6</div>
+    </section>
+  </div>
+
+  <div>
+    <h1>
+      <pre>
+        ----------------------------------------------
+
+        align-content: space-between;
+      </pre>
+    </h1>
+    <div class="info">
+      Cria um espaço entre os elementos, ignorando o início e final.
+    </div>
+    <section class="grid space-between">
+      <div class="item">1</div>
+      <div class="item item-2">2</div>
+      <div class="item item-3">3</div>
+      <div class="item">4</div>
+      <div class="item item-5">5</div>
+      <div class="item">6</div>
+    </section>
+  </div>
+
+  <div>
+    <h1>
+      <pre>
+       ----------------------------------------------
+
+        align-content: space-evenly;
+      </pre>
+    </h1>
+    <div class="info">
+      Cria um espaço igual entre as colunas (no início e final também).
+    </div>
+    <section class="grid space-evenly">
+      <div class="item">1</div>
+      <div class="item item-2">2</div>
+      <div class="item item-3">3</div>
+      <div class="item">4</div>
+      <div class="item item-5">5</div>
+      <div class="item">6</div>
+    </section>
+  </div>
+
+</body>
+</html>

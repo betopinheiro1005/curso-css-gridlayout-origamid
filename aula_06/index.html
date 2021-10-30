@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>CSS - Grid Layout</title>
+</head>
+<body>
+
+  <h2>Grid Container</h2>
+  <h2>grid-gap</h2>
+  <h3>Define o gap (gutter) entre os elementos do grid.</h3>
+
+  <hr>
+
+  <div>
+    <h1>
+      <pre>
+        grid-template:
+          "logo     nav     nav"    50px
+          "sidenav  content advert" 150px
+          "sidenav  footer  footer" 100px
+          / 100px 1fr 50px;
+
+          gap: 20px;
+      </pre>
+    </h1>
+    <div class="info">
+      Espaçamento entre linhas e colunas<br>
+      Com gap o espaçamento é apenas interno
+    </div>
+    <section class="grid grid-template gap">
+      <div class="item logo">logo</div>
+      <div class="item nav">nav</div>
+      <div class="item content">content</div>
+      <div class="item sidenav">sidenav</div>
+      <div class="item advert">advert</div>
+      <div class="item footer">footer</div>
+    </section>
+  </div>
+
+  <div>
+    <h1>
+      <pre>
+        ----------------------------------------------
+
+        gap: 2px;
+        column-gap: 20px;
+      </pre>
+    </h1>
+    <div class="info">
+      Espaçamento entre colunas:
+    </div>
+    <section class="grid grid-template column-gap">
+      <div class="item logo">logo</div>
+      <div class="item nav">nav</div>
+      <div class="item content">content</div>
+      <div class="item sidenav">sidenav</div>
+      <div class="item advert">advert</div>
+      <div class="item footer">footer</div>
+    </section>
+  </div>
+
+  <div>
+    <h1>
+      <pre>
+        ----------------------------------------------
+
+        gap: 2px;
+        row-gap: 20px;
+      </pre>
+    </h1>
+    <div class="info">
+      Espaçamento entre linhas:
+    </div>
+    <section class="grid grid-template row-gap">
+      <div class="item logo">logo</div>
+      <div class="item nav">nav</div>
+      <div class="item content">content</div>
+      <div class="item sidenav">sidenav</div>
+      <div class="item advert">advert</div>
+      <div class="item footer">footer</div>
+    </section>
+  </div>
+
+  <div>
+    <h1>
+      <pre>
+        ----------------------------------------------
+
+        gap: 20px;
+
+        margin-top: 10px;
+        margin-left: 20px;
+        margin-bottom: 50px;
+      </pre>
+    </h1>
+    <div class="info">
+      gap + margin em advert:
+    </div>
+    <section class="grid grid-template gap">
+      <div class="item logo">logo</div>
+      <div class="item nav">nav</div>
+      <div class="item content">content</div>
+      <div class="item sidenav">sidenav</div>
+      <div class="item advert margin">advert</div>
+      <div class="item footer">footer</div>
+    </section>
+  </div>
+
+</body>
+</html>
