@@ -1,8 +1,7 @@
 # Curso de CSS - Grid Layout e Projeto Wildbeast 
 ## Origamid (André Rafael)  
 
-### Link do vídeo  
-<https://www.youtube.com/watch?v=hKXOVD2Yrj8&t=1004s>
+### [Vídeos do curso](https://www.youtube.com/watch?v=hKXOVD2Yrj8&t=1004s)  
 
 ### Lista de aulas
 
